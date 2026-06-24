@@ -1,0 +1,304 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "city": "Lisbon",
+      "country": "Portugal",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-LİS-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the timeless charm of Lisbon into your space with this vintage travel poster. Designed and prepared by City Frame Collective, this digital download captures the nostalgic atmosphere of Portugal's coastal capital through engraving-inspired illustration and a muted screen-print palette.",
+      "tags": ["lisbon", "portugal", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1dXDGMfUR0qpG-NbPMx8YaXXEiip3rS_K"
+      }
+    },
+    {
+      "id": 2,
+      "city": "Naples",
+      "country": "Italy",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-NAP-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Naples comes alive in this vintage travel poster, capturing the soul of Italy's most captivating coastal city. The engraving-inspired illustration showcases the iconic Castel dell'Ovo against the shimmering Bay of Naples.",
+      "tags": ["naples", "italy", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=13JGjO2EJmPYDXu3dfR_CU0BNsBhhsDSA"
+      }
+    },
+    {
+      "id": 3,
+      "city": "Paris",
+      "country": "France",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-PAR-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the romance of Paris into your space with this vintage travel poster featuring engraving-inspired linework and a muted screen-print palette. The cinematic city atmosphere captures the iconic Eiffel Tower.",
+      "tags": ["paris", "france", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1VUmP-c8B1AbDBS7y7t_UbRfO0HWQ-jlZ"
+      }
+    },
+    {
+      "id": 4,
+      "city": "Tokyo",
+      "country": "Japan",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-TOK-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Tokyo Travel Poster, Vintage Japan Wall Art. This vintage travel poster captures Tokyo's iconic skyline with engraving-inspired detail and a muted screen-print palette.",
+      "tags": ["tokyo", "japan", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1R8noTpkWvFTmk0eEkdVrIpmZIH7EJs-F"
+      }
+    },
+    {
+      "id": 5,
+      "city": "Istanbul",
+      "country": "Turkey",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-IST-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Istanbul comes alive in this vintage travel poster from City Frame Collective. The engraving-inspired illustration captures the city's timeless charm with muted screen-print colors.",
+      "tags": ["istanbul", "turkey", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1xHnxuZx_mtN84-OgwIOg9eGq7dH3UOa3"
+      }
+    },
+    {
+      "id": 6,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-AMS-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the charm of Amsterdam into your space with this vintage travel poster from City Frame Collective. This engraving-inspired city artwork captures the nostalgic atmosphere.",
+      "tags": ["amsterdam", "netherlands", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1_Mz7yPGXQxlwWyZnD7maB8M0_DmsR_Vd"
+      }
+    },
+    {
+      "id": 7,
+      "city": "Barcelona",
+      "country": "Spain",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-BAR-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the spirit of Barcelona into your space with this vintage travel poster from City Frame Collective. The engraving-inspired illustration captures the city's iconic Sagrada Familia.",
+      "tags": ["barcelona", "spain", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1BgdvyHzsQBfT9E6m_eOqL7xHGMYPRzrv"
+      }
+    },
+    {
+      "id": 8,
+      "city": "New York",
+      "country": "United States",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-NEW-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Experience the iconic energy of New York through this vintage travel poster, featuring engraving-inspired illustration and a muted screen-print palette.",
+      "tags": ["new york", "usa", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1ZrH3dFtElyQsaBfXRC7fcTI7fASnv5MD"
+      }
+    },
+    {
+      "id": 9,
+      "city": "Dubai",
+      "country": "UAE",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-DUB-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the golden spirit of Dubai into your space with this vintage travel poster featuring engraving-inspired illustration and muted screen-print colors.",
+      "tags": ["dubai", "uae", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1RW_8ENMQxH_9EytqH4h84cZD5_ONAr_i"
+      }
+    },
+    {
+      "id": 10,
+      "city": "Bangkok",
+      "country": "Thailand",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-BAN-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the vibrant energy of Bangkok into your space with this vintage travel poster from City Frame Collective.",
+      "tags": ["bangkok", "thailand", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1GH_jiIVQVsPM7iKrXJnNFH-YN0FHsUvE"
+      }
+    },
+    {
+      "id": 11,
+      "city": "Vienna",
+      "country": "Austria",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-VİE-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Vienna comes alive in this vintage travel poster, where the grand architecture of the Hofburg Palace stands against a muted, screen-print palette sky.",
+      "tags": ["vienna", "austria", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1FYMR98GYcy0p8y5g8Dlh2-rSnMOtEWqb"
+      }
+    },
+    {
+      "id": 12,
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "series": "From Alaska",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-FA-COP-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Copenhagen comes alive in this vintage travel poster, capturing the essence of Denmark's capital through engraving-inspired illustration.",
+      "tags": ["copenhagen", "denmark", "vintage", "travel", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=null"
+      }
+    },
+    {
+      "id": 13,
+      "city": "Tokyo",
+      "country": "Japan",
+      "series": "Vintage Folk Heritage",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-VF-TOK-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Tokyo comes alive in this vintage travel poster from City Frame Collective's Vintage Folk Heritage series.",
+      "tags": ["tokyo", "japan", "vintage", "folk", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1lxYJbQiPtiEbCa5yyglYihMXEJqMBice"
+      }
+    },
+    {
+      "id": 14,
+      "city": "New York",
+      "country": "United States",
+      "series": "Vintage Folk Heritage",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-VF-NEW-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the spirit of New York into your space with this vintage travel poster from City Frame Collective.",
+      "tags": ["new york", "usa", "vintage", "folk", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1nXRmGwdOt4Bnj2r52iRyb7WiTBNajkQS"
+      }
+    },
+    {
+      "id": 15,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "series": "Vintage Folk Heritage",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-VF-AMS-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Amsterdam travel poster in vintage style captures the nostalgic charm of this historic Dutch city.",
+      "tags": ["amsterdam", "netherlands", "vintage", "folk", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1jGdvd3noMDBKf2VCORFUSw5SUijWw5l5"
+      }
+    },
+    {
+      "id": 16,
+      "city": "Barcelona",
+      "country": "Spain",
+      "series": "Vintage Folk Heritage",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-VF-BAR-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the spirit of Barcelona into your space with this vintage-inspired travel poster from City Frame Collective.",
+      "tags": ["barcelona", "spain", "vintage", "folk", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=16h9-ONZyfoMZCN5axsw3lJSEKydTwYvb"
+      }
+    },
+    {
+      "id": 17,
+      "city": "Tokyo",
+      "country": "Japan",
+      "series": "Retro Red Editorial",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-RR-TOK-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the electric energy of Tokyo into your space with this vintage-inspired travel poster.",
+      "tags": ["tokyo", "japan", "retro", "red", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1vYG58K_JxhwdvaF0Spo9l18Opp-3bFWw"
+      }
+    },
+    {
+      "id": 18,
+      "city": "New York",
+      "country": "United States",
+      "series": "Retro Red Editorial",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-RR-NEW-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Bring the iconic energy of New York into your space with this vintage-inspired travel poster.",
+      "tags": ["new york", "usa", "retro", "red", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1a6ufmuNCCTLEfRf5G0YcbotHNHsLfYrt"
+      }
+    },
+    {
+      "id": 19,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "series": "Retro Red Editorial",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-RR-AMS-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Amsterdam travel poster in vintage 1970s editorial style with warm red tones.",
+      "tags": ["amsterdam", "netherlands", "retro", "red", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1mqUY0sJzlz0Ba4NQzmwW3e_abtgCc3Yz"
+      }
+    },
+    {
+      "id": 20,
+      "city": "Barcelona",
+      "country": "Spain",
+      "series": "Retro Red Editorial",
+      "version": "v1",
+      "price": 349,
+      "sku": "CFC-RR-BAR-V01-DIG",
+      "etsyUrl": "https://www.etsy.com/shop/CityFrameCollective",
+      "description": "Barcelona comes alive in this vintage travel poster from City Frame Collective.",
+      "tags": ["barcelona", "spain", "retro", "red", "poster"],
+      "images": {
+        "hero": "https://drive.google.com/uc?id=1Or6lPbSdFXhyJuyyuJ3jfpVY0g5E-CYq"
+      }
+    }
+  ]
+}

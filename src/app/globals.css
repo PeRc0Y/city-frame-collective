@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #000000;
+  --on-primary: #ffffff;
+  --primary-container: #1c1b1b;
+  --on-primary-container: #858383;
+  --primary-fixed: #e5e2e1;
+  --on-primary-fixed: #1c1b1b;
+  --primary-fixed-dim: #c8c6c5;
+  --on-primary-fixed-variant: #474746;
+
+  --secondary: #695c4d;
+  --on-secondary: #ffffff;
+  --secondary-container: #efddc9;
+  --on-secondary-container: #6d6151;
+  --secondary-fixed: #f1e0cc;
+  --on-secondary-fixed: #231a0e;
+  --secondary-fixed-dim: #d5c4b1;
+  --on-secondary-fixed-variant: #504536;
+
+  --tertiary: #000000;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #211b11;
+  --on-tertiary-container: #8d8274;
+  --tertiary-fixed: #eee0d0;
+  --on-tertiary-fixed: #211b11;
+  --tertiary-fixed-dim: #d1c5b5;
+  --on-tertiary-fixed-variant: #4e453a;
+
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+
+  --background: #fbf9f4;
+  --on-background: #1b1c19;
+  --surface: #fbf9f4;
+  --on-surface: #1b1c19;
+  --surface-dim: #dbdad5;
+  --surface-bright: #fbf9f4;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f5f3ee;
+  --surface-container: #f0eee9;
+  --surface-container-high: #eae8e3;
+  --surface-container-highest: #e4e2dd;
+  --surface-tint: #5f5e5e;
+  --surface-variant: #e4e2dd;
+  --on-surface-variant: #444748;
+  --outline: #747878;
+  --outline-variant: #c4c7c7;
+  --inverse-surface: #30312e;
+  --inverse-on-surface: #f2f1ec;
+  --inverse-primary: #c8c6c5;
+
+  --scrim: rgba(0, 0, 0, 0.0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-background);
+  font-family: 'Hanken Grotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Caslon Text', serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.gallery-item {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-12px);
+}
+
+.cf-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cf-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.cf-link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .gallery-item:hover {
+    transform: translateY(-8px);
+  }
+}
