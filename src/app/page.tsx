@@ -17,7 +17,7 @@ interface Product {
 
 async function getProducts(): Promise<Product[]> {
   try {
-    const res = await fetch('http://localhost:3000/data/products.json', {
+    const res = await fetch('/data/products.json', {
       cache: 'no-store',
     })
     if (!res.ok) throw new Error('Failed to fetch products')
