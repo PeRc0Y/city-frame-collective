@@ -101,11 +101,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
             <p>© {new Date().getFullYear()} City Frame Collective. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <Link href="#" className="hover:text-white transition">
-                Privacy Policy
+<Link href="/privacy-policy" className="hover:text-white transition">                Privacy Policy
               </Link>
-              <Link href="#" className="hover:text-white transition">
-                Terms of Service
+<Link href="/privacy-policy" className="hover:text-white transition">                Terms of Service
               </Link>
             </div>
           </div>
