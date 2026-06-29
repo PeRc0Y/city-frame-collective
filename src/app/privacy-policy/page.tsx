@@ -72,7 +72,9 @@ export default function PrivacyPolicy() {
             </p>
             <p className="mt-4">
               <strong>City Frame Collective</strong><br />
-              Email: <a href="mailto:mucahityavuz98@gmail.com" className="text-blue-600 hover:underline">mucahityavuz98@gmail.com</a>
+              Email: <a href="mailto:cityframecollective@gmail.com
+" className="text-blue-600 hover:underline">cityframecollective@gmail.com
+</a>
             </p>
           </section>
         </div>
