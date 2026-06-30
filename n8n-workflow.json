@@ -1,0 +1,133 @@
+{
+  "name": "City Frame Collective - Google Sheets to products.json",
+  "nodes": [
+    {
+      "parameters": {
+        "triggerType": "manual"
+      },
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "spreadsheetId": "18_FE1Sb4nw56-sDSPqscn6EniFeI7hM7LYytGjb9GZY",
+        "range": "Sheet1!A:CY",
+        "options": {}
+      },
+      "name": "Google Sheets - Read Data",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [450, 300],
+      "credentials": {
+        "googleSheetsOAuth2Api": "google_sheets_credential"
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "// Excel columns mapping with Cloudinary support\nconst rows = $input.all();\nconst CLOUDINARY_BASE = 'https://res.cloudinary.com/city-frame-collective/image/upload';\n\nconst rows = $input.all();\nconst products = rows.map((row, index) => {\n  const data = row.json;\n  \n  // Convert image URL to Cloudinary format\n  const getImageUrl = (url) => {\n    if (!url) return null;\n    \n    // If already Cloudinary URL, use as-is\n    if (url.includes('res.cloudinary.com')) {\n      return url;\n    }\n    \n    // If Google Drive URL, convert to uc?id= format\n    if (url.includes('drive.google.com')) {\n      const match = url.match(/\\/d\\/([a-zA-Z0-9-_]+)/);\n      return match ? `https://drive.google.com/uc?id=${match[1]}` : null;\n    }\n    \n    return url;\n  };\n  \n  // Parse tags from comma-separated string\n  const parseTags = (tagString) => {\n    if (!tagString) return [];\n    return tagString.split(',').map(t => t.trim().toLowerCase());\n  };\n  \n  return {\n    id: data.id || index + 1,\n    city: data.city || '',\n    country: data.country || '',\n    series: data.series || '',\n    price: parseInt(data['price usd']) || 349,\n    description: data.inspiration || '',\n    images: {\n      hero: getImageUrl(data['hero image link']) || ''\n    },\n    etsyUrl: data['etsy listing link'] || '',\n    tags: parseTags(data['etsy tags']) || []\n  };\n});\n\nreturn { products };"
+      },
+      "name": "Transform to JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "// Prepare final JSON structure\nconst data = $input.first().json;\nconst finalJson = {\n  products: data.products,\n  lastUpdated: new Date().toISOString(),\n  totalProducts: data.products.length\n};\n\nreturn JSON.stringify(finalJson, null, 2);"
+      },
+      "name": "Format JSON Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/YOUR_USERNAME/city-frame-collective/main/public/data/products.json",
+        "authentication": "genericCredentialType",
+        "genericCredentialType": "githubTokenAuth",
+        "method": "PUT",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "body",
+              "value": "={{ $node[\"Format JSON Output\"].json }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Push to GitHub",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {},
+      "name": "Success",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1250, 300]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets - Read Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets - Read Data": {
+      "main": [
+        [
+          {
+            "node": "Transform to JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transform to JSON": {
+      "main": [
+        [
+          {
+            "node": "Format JSON Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format JSON Output": {
+      "main": [
+        [
+          {
+            "node": "Push to GitHub",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Push to GitHub": {
+      "main": [
+        [
+          {
+            "node": "Success",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
